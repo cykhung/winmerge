@@ -1,0 +1,33 @@
+## This is a directory/file filter for WinMerge
+## This filter suppresses various binaries found in GNU C source trees
+name: Kevin-Public-Folder-CKH
+desc: Suppresses various files for comparison
+
+## This is an inclusive (loose) filter
+## (it lets through everything not specified)
+def: include
+
+## Filters for filenames begin with f:
+## Filters for directories begin with d:
+## (Inline comments begin with " ##" and extend to the end of the line)
+
+f: ^cia\.m$
+f: ^cia\.txt\.asc$
+f: ^ckhBakerOil\.m$
+f: ^desktop\.ini$
+f: ^decrypt\.m$
+f: ^encrypt\.m$
+f: ^encrypt_scramble\.m$
+f: ^encrypt_seed\.m$
+f: ^cd\.m$
+f: ^kevin0120_peer_quote\.m$
+f: ^kevin0135_performance_review_self_review_2019\.m$
+#f: ^ckhfiledecrypt\.m$
+#f: ^ckhfileencrypt\.m$
+#f: \.lib$
+#f: \.bak$
+
+#d: \\cvs$ ## CVS control directory
+#d: ^\\.MATLABDriveAppData$
+d: ^\\lib\\cygwin64$
+d: ^\\tmp$
