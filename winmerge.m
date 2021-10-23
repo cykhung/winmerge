@@ -46,7 +46,8 @@ end
 
 
 %% Find WinMergeU.exe.
-WinMergeU = fullfile(fileparts(mfilename('fullpath')), 'WinMergeU.exe');
+WinMergeU = fullfile(fileparts(mfilename('fullpath')), 'private', ...
+    'winmerge-2.16.0.0', 'WinMergeU.exe');
 
 
 %% Call winmerge.
